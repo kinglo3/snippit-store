@@ -55,8 +55,8 @@ function SnippitEditor({ getSnippits, setSnippitEditorOpen, editSnippitData }) {
                          <textarea id="editor-code" value={editorCode}
                          onChange={(e) => setEditorCode(e.target.value)} />
 
-                         <button type='submit'>Save snippit</button>
-                         <button type="button" onClick={closeEditor}>
+                         <button className='btn-save' type='submit'>Save</button>
+                         <button className='btn-cancel' type="button" onClick={closeEditor}>
                              Cancel
                          </button>
                      </form>

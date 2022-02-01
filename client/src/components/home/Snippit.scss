@@ -1,11 +1,8 @@
 @import "../../style/mixins.scss";
 
 .snippit {
-    background: var(--light-color);
-    box-shadow: var(--box-shadow);
-    margin: 1.5rem 0;
-    border-radius: 10px;
-    padding: 1rem;
+    @include card();
+    margin: 1.5rem;
 
     .title,
     .description,

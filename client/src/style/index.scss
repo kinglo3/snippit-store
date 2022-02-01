@@ -33,3 +33,10 @@ button {
     text-decoration: unset;
     @include link();
 }
+
+input, textarea {
+    color: unset;
+    background: unset;
+    font: unset;
+    border: unset;
+}
