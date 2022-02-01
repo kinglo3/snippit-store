@@ -19,8 +19,8 @@ function Snippit({ snippit, getSnippits, editSnippit }) {
                     <code>{snippit.code}</code>
                 </pre>
             )}
-            <button onClick={() => editSnippit(snippit)}>Edit</button>
-            <button onClick={deleteSnippit}>Delete</button>
+            <button className='btn-edit' onClick={() => editSnippit(snippit)}>Edit</button>
+            <button className='btn-delete' onClick={deleteSnippit}>Delete</button>
         </div>
     );
 }

@@ -1,3 +1,5 @@
+@import "../../style/mixins.scss";
+
 .snippit {
     background: var(--light-color);
     box-shadow: var(--box-shadow);
@@ -17,5 +19,21 @@
         font-family: monospace;
         font-size: 1.1rem;
         background: var(--dark-color);
+    }
+
+    .btn-delete,
+    .btn-edit {
+        @include btn();
+        margin-right: 1rem;
+    }
+
+    .btn-edit {
+        background: var(--primary-color);
+        color: var(--light-color);
+    }
+
+    .btn-delete {
+        background: var(--danger-color);
+        color: var(--light-color);
     }
 }
