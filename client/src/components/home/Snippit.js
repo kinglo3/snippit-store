@@ -12,6 +12,7 @@ function Snippit({ snippit, getSnippits, editSnippit }) {
 
     return (
         <div className='snippit'>
+            <a href='/'>Test Link</a>
             {snippit.title && <h2 className='title'>{snippit.title}</h2>}
             {snippit.description && <p className='description'>{snippit.description}</p>}
             {snippit.code && (

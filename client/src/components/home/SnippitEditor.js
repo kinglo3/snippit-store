@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Axios from "axios";
+import "./SnippitEditor.scss";
 
 function SnippitEditor({ getSnippits, setSnippitEditorOpen, editSnippitData }) {
     const [editorTitle, setEditorTitle] = useState("");
