@@ -1,0 +1,14 @@
+@import "./variables.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--primary-color);
+    color: var(--text-dark-color);
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+    font-family: 'Mochiy Pop One', sans-serif;
+}
