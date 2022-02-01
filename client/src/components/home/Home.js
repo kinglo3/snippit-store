@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Axios from "axios";
-import Snippit from '../Snippit';
+import Snippit from './Snippit';
 import SnippitEditor from './SnippitEditor';
 
 const Home = () => {

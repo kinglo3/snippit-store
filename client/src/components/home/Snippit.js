@@ -1,5 +1,6 @@
 import Axios from 'axios';
 import React from 'react';
+import "./Snippit.scss"
 
 function Snippit({ snippit, getSnippits, editSnippit }) {
 
@@ -11,10 +12,10 @@ function Snippit({ snippit, getSnippits, editSnippit }) {
 
     return (
         <div className='snippit'>
-            {snippit.title && <h2>{snippit.title}</h2>}
-            {snippit.description && <p>{snippit.description}</p>}
+            {snippit.title && <h2 className='title'>{snippit.title}</h2>}
+            {snippit.description && <p className='description'>{snippit.description}</p>}
             {snippit.code && (
-                <pre>
+                <pre className='code'>
                     <code>{snippit.code}</code>
                 </pre>
             )}
