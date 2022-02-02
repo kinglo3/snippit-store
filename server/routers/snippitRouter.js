@@ -6,7 +6,7 @@ router.get("/", async (req, res) => {
         const snippits = await Snippit.find();
         res.json(snippits);
     } catch (err) {
-        
+        res.status(500).send();
     }
 });
 
