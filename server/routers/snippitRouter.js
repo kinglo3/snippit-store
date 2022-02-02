@@ -37,6 +37,8 @@ router.put("/:id", async (req, res) => {
         const {title, description, code} = req.body;
         const snippitId = req.params.id;
 
+        //validate
+
         if (!description && !code) {
             return res.status(400).json({ errorMessage: "Please enter a description or code." });
         }

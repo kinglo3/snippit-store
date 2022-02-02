@@ -20,6 +20,7 @@ app.listen(4000, () => console.log("Server started on port 4000"));
 //router setup
 
 app.use("/snippit", require("./routers/snippitRouter"));
+app.use("/auth", require("./routers/userRouter"));
 
 //connect to mongodb
 
