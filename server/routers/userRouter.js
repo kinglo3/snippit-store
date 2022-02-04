@@ -72,13 +72,13 @@ router.post("/login", async (req, res) => {
           
           //get user account
   
-        const existsingUser = await User.findOne({ email });
-        if (!existsingUser)
+        const existingUser = await User.findOne({ email });
+        if (!existingUser)
           return res.status(401).json({
               errorMessage: "Wrong email or password.",
           });
 
-          const correctPassword = await bcrypt.compare(password, existsingUser, passwordHash);
+          const correctPassword = await bcrypt.compare(password, existingUser, passwordHash);
 
           if (!correctPassword)
           return res.status(401).json({
@@ -88,7 +88,7 @@ router.post("/login", async (req, res) => {
           //create JWT
   
           const token = jwt.sign({
-              id: existsingUser._id
+              id: existingUser._id
           }, process.env.JWT_SECRET);
   
           res.cookie("token", token, { httpOnly: true }).send();

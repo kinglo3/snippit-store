@@ -42,7 +42,7 @@ function SnippitEditor({ getSnippits, setSnippitEditorOpen, editSnippitData }) {
 
     return (
         <div className='snippit-editor'>
-                     <form onSubmit={saveSnippit}>
+                     <form className='form' onSubmit={saveSnippit}>
                          <label htmlFor="editor-title">Title</label>
                          <input id="editor-title" type="text" value={editorTitle}
                          onChange={(e) => setEditorTitle(e.target.value)} />
